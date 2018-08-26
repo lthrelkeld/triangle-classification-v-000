@@ -12,7 +12,7 @@ class Triangle
     @side1_sum == true if @side1 < @side2 + @side3
     @side2_sum == true if @side2 < @side1 + @side3
     @side3_sum == true if @side3 < @side1 + @side2
-
+    binding.pry
     if @greater_than_zero == true && @side1_sum == true && @side2_sum == true && @side3_sum == true
       if @side1 == @side2 && @side1 == @side3
         :equilateral
