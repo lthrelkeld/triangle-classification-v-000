@@ -1,3 +1,5 @@
+require 'pry'
+
 class Triangle
   attr_accessor :side1, :side2, :side3, :greater_than_zero, :side1_sum, :side2_sum, :side3_sum
 
