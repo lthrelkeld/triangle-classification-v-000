@@ -6,9 +6,13 @@ class Triangle
     side3_sum == true if side3 < side1 + side2
 
     if greater_than_zero == true && side1_sum == true && side2_sum == true && side3_sum == true
-      :equilateral if side1 == side2 && side1 == side3
-      :isosceles if side1 == side2 || side1 == side3 || side2 == side3
-      :scalene if not :isosceles or :equilateral
+      if side1 == side2 && side1 == side3
+        :equilateral
+      elsif side1 == side2 || side1 == side3 || side2 == side3
+        :isosceles
+      else
+      :scalene
+      end
     else
       begin
         raise TriangleError
